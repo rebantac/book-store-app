@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
 import { Box, Button, Stack, TextField, Typography } from '@mui/material';
 
-import { bookOptions, fetchData } from '../utils/fetchData'
+import { fetchData } from '../utils/fetchData'
 
 const SearchBooks = ({ setBooks }) => {
   const [search, setSearch] = useState('');
+  // const [apiKey, setApiKey] = useState(process.env.GOOGLE_CLOUD_API_KEY)
 
   const handleSearch = async () => {
-    if(search) {
-      var new_search = search.split(' ').join('+');
-      const searchedBooks = await fetchData(`https://hapi-books.p.rapidapi.com/search/${new_search}`, bookOptions);
+    if (search) {
+      let new_search = search.split(' ').join('+');
+    
+      let URL = `https://www.googleapis.com/books/v1/volumes?q=${new_search}&key=${process.env.REACT_APP_GOOGLE_API_KEY}&maxResults=9`;
 
-      // console.log(searchedBooks);
+      const data = await fetchData(URL);
+      // console.log(data)
+
+      let searchedBooks = data.items;
+
       setSearch('');
       setBooks(searchedBooks);
     }
@@ -28,7 +34,7 @@ const SearchBooks = ({ setBooks }) => {
           value={search}
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder='Search Books'
-          type='text'
+          type='text' autoComplete='off'
         />
 
         <Button onClick={handleSearch}>
