@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Box } from '@mui/material';
+import LoadingButton from '@mui/lab/LoadingButton';
 
 import Detail from '../components/Detail';
 import { fetchData } from '../utils/fetchData';;
 
 const BookDetail = () => {
   const [bookDetail, setBookDetail] = useState({});
+  const [loading, setLoading] = useState(true);
 
   const { id } = useParams();
 
@@ -16,14 +18,40 @@ const BookDetail = () => {
 
       const bookDetailData = await fetchData(bookUrl);
       setBookDetail(bookDetailData.items[0]);
+      setLoading(false)
     }
 
     fetchBooksData()
   }, [id]);
 
+  const handleCard = () => {
+    if (loading) {
+      return (
+        <LoadingButton loading variant="outlined">
+          Submit
+        </LoadingButton>
+      );
+    } else {
+      let bookInfo = bookDetail.volumeInfo;
+      return (
+        <Detail
+          thumbnail={bookInfo.imageLinks ? bookInfo.imageLinks.thumbnail : ''}
+          title={bookInfo.title}
+          pageCount={bookInfo.pageCount}
+          language={bookInfo.language}
+          authors={bookInfo.authors ? bookInfo.authors : []}
+          publisher={bookInfo.publisher}
+          description={bookInfo.description}
+          previewLink={bookInfo.previewLink}
+        />
+      );
+    }
+  };
+
+
   return (
     <Box>
-      <Detail bookDetail={bookDetail}/>
+      {handleCard()}
     </Box>
   )
 }
