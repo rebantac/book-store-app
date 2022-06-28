@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, Stack, Button } from '@mui/material';
+import { Interweave } from 'interweave';
 
 const Detail = ({ 
   thumbnail, 
@@ -39,7 +40,8 @@ const Detail = ({
         </Typography>
 
         <Typography>
-          Summary: <br /> {description}
+          Summary: <br />
+          <Interweave content={description} />;
         </Typography>
         
         <Button >
