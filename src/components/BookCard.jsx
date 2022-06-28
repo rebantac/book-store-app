@@ -5,7 +5,7 @@ import { Box, Stack, Typography } from '@mui/material';
 const BookCard = ({ book, thumbnail, authors }) => {
   return (
     <Box width='200px'>
-      <Link to={`/book/${book.volumeInfo.title}`}>
+      <Link to={`/book/${book.id}`}>
         <img src={thumbnail} alt={book.volumeInfo.title} loading='lazy' width='200px' height='270px' />
 
         <Typography mt='11px' pb='10px' flexWrap='wrap' textTransform='capitalize' color='#000' fontWeight='bold' fontSize='12px'>

@@ -14,10 +14,10 @@ const BookDetail = () => {
 
   useEffect(() => {
     const fetchBooksData = async () => {
-      let bookUrl = `https://www.googleapis.com/books/v1/volumes?q=${id}&key=${process.env.REACT_APP_GOOGLE_API_KEY}&maxResults=1`;
+      let bookUrl = `https://www.googleapis.com/books/v1/volumes/${id}?key=${process.env.REACT_APP_GOOGLE_API_KEY}`;
 
       const bookDetailData = await fetchData(bookUrl);
-      setBookDetail(bookDetailData.items[0]);
+      setBookDetail(bookDetailData);
       setLoading(false)
     }
 
