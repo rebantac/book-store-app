@@ -7,14 +7,16 @@ import Books from '../components/Books';
 
 const Home = () => {
   const [books, setBooks] = useState([]);
+  const [bestSellers, setBestSellers] = useState([])  
+  const [shownyt, setShownyt] = useState(true);
 
   return (
     <Box>
       <HeroBanner />
 
-      <SearchBooks setBooks={setBooks} />
+      <SearchBooks setBooks={setBooks} setShownyt={setShownyt} setBestSellers={setBestSellers} />
 
-      <Books books={books} />
+      <Books books={books} shownyt={shownyt} bestSellers={bestSellers} />
     </Box>
   )
 }
