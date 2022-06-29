@@ -1,0 +1,90 @@
+body{
+    margin: 0%;
+    padding: 0%;
+
+}
+h1{
+    font-family: 'Julius Sans One', sans-serif;
+}
+p{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+.css-mqwrak-MuiStack-root {
+    gap: 0px !important;
+    margin:0% !important;
+}
+.css-jio98t-MuiStack-root {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 4px;
+    margin-right: 36px;
+}
+.navbar{
+    margin-top: 0px !important;
+    background-color: rgb(237, 236, 236);
+    position: fixed;
+    z-index: 4;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+   
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    color: #393D4A;
+    font-size: 1.2rem;
+   
+    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
+}
+.signup{
+        font-family: 'Archivo Narrow', sans-serif;
+        text-align: center;
+        letter-spacing: 2px;
+        background-color: #393D4A;
+        color: white;
+        position: fixed;
+        margin-top: 3%;
+        z-index: 1;
+        width: 100%;
+        padding: 1%;
+    
+
+}
+.btn{
+    background-color:#393D4A ;
+    color: white;
+    padding:0.5%;
+    border-color: white;
+    border-radius: 5px;
+}
+.banner_bg{
+    background-color: #d2d2d2;
+    position: relative;
+    width: 100%;
+}
+.banner_img{
+  width: 70%;
+}
+.text_h1{
+    color: #393D4A;
+    position: absolute;
+    top: 48%;
+    left: 49%;
+    font-size: 4vw;
+    letter-spacing: 0.8vw;
+}
+.text_part{
+    color: white;
+}
