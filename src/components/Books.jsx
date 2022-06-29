@@ -4,6 +4,7 @@ import { Box, Stack, Typography } from '@mui/material';
 
 import BookCard from './BookCard';
 import BestSellerCard from './BestSellerCard';
+import Rank1Book from './Rank1Book';
 
 const Books = ({ books, shownyt, bestSellers }) => {
   const handleBooks = () => {
@@ -42,9 +43,15 @@ const Books = ({ books, shownyt, bestSellers }) => {
 
           <Stack direction='row' sx={{ gap: { lg: '110px', xs: '50px' } }} flexWrap='wrap' justifyContent='center'>
             {bestSellers.map((bestSeller, index) => {
-              return (
-                <BestSellerCard bestSeller={bestSeller} />
-              )
+              if (bestSeller.rank === 1) {
+                return (
+                  <Rank1Book bestSeller={bestSeller} />
+                )
+              } else {
+                return (
+                  <BestSellerCard bestSeller={bestSeller} />
+                )
+              }
             })}
           </Stack>
         </>
