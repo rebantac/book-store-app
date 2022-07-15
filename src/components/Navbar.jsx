@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Stack } from '@mui/material';
+import circle from '../assets/circle1.png';
 
 // import Logo from '../assets/logo.png';
 
@@ -20,14 +21,17 @@ const Navbar = () => {
       <Stack direction='row' gap='40px'>
         <Link to='/' >Home &nbsp;|&nbsp;</Link>
 
-        <a href='#books'>Books &nbsp; |&nbsp;</a>
-        <a href='#books'>Blogs &nbsp; |&nbsp;</a>
+        <a href='#books'>Books &nbsp;|&nbsp;</a>
+        <a href='#books'>Blogs &nbsp;|&nbsp;</a>
         <a href='#books'>Contact Us</a>
       </Stack>
     </Stack>
-    <div className='signup'>
+    {/* <div className='signup'>
            sign up to get 20% of premium <button className='btn'>signup</button>
-    </div>
+    </div> */}
+    {/* <div className='group-1'>
+         <img className='cicle-img' src={circle} alt="" />
+    </div> */}
     </>
   )
 }

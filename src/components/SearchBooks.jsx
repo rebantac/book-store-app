@@ -41,23 +41,26 @@ const SearchBooks = ({ setBooks, setShownyt, setBestSellers }) => {
 
   return (
     <Stack m='40px'>
-      <Typography>
-        Our <br /> Collections
-      </Typography>
+      <div className='collection'>
+        Our <br/> Collections
+      </div>
 
-      <Box m='40px'>
-        <TextField
+      {/* <Box m='40px'className='search_field'> */}
+      <div className='searching'>
+        <input className='text-line'
+    
           value={search}
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder='Search Books'
           type='text' autoComplete='off'
         />
 
-        <Button onClick={handleSearch}>
-          Search
-        </Button>
+        <button className='button' onClick={handleSearch}>
+        <i class="fa-solid fa-2x fa-magnifying-glass icon"></i>
+        </button>
+        </div>
 
-      </Box>
+      {/* </Box> */}
     </Stack>
   )
 }

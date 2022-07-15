@@ -5,22 +5,33 @@ const bestSellerCard = ({ bestSeller }) => {
   const { book_image, author, title, rank } = bestSeller;
 
   return (
-    <Box width='200px'>
+    <>
+ 
       {/* {console.log(bestSeller)} */}
+     
       <Link to={`/book/${title}`}>
+      <div class="container">
+  <div class="row">
+    <div class="col">
         <Typography>
           Rank: {rank}
         </Typography>
 
-        <img src={book_image} alt={title} loading='lazy' width='200px' height='270px' />
+      
 
-        <Typography mt='11px' pb='10px' flexWrap='wrap' textTransform='capitalize' color='#000' fontWeight='bold' fontSize='12px'>
+        <Typography>
           {title}
         </Typography>
-
-        <Typography mt='7px' pb='5px' textTransform='capitalize' color='#000' fontWeight='bold' fontSize='11px'>{author}</Typography>
+        </div>
+        <div class="col">
+        <Typography >{author}</Typography>
+        <img src={book_image} alt={title} loading='lazy' />
+        </div>
+        </div>
+        </div>
       </Link>
-    </Box>
+       
+      </>
   )
 }
 

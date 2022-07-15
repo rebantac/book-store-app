@@ -5,24 +5,32 @@ const Rank1Book = ({ bestSeller }) => {
   const { book_image, author, title, rank, description } = bestSeller;
 
   return (
+    <div className='rank-1-sub'>
+       
     <Box width='1180px'>
       {/* {console.log(bestSeller)} */}
+     
       <Link to={`/book/${title}`}>
+      <div className='rank-1-desp'>
         <Typography>
           Rank: {rank}
         </Typography>
 
-        <Typography mt='11px' pb='10px' flexWrap='wrap' textTransform='capitalize' color='#000' fontWeight='bold' fontSize='12px'>
+        <Typography >
           {title}
         </Typography>
 
-        <Typography mt='7px' pb='5px' textTransform='capitalize' color='#000' fontWeight='bold' fontSize='11px'>{author}</Typography>
+        <Typography>{author}</Typography>
 
-        <Typography mt='7px' pb='5px' textTransform='capitalize' color='#000' fontWeight='bold' fontSize='11px'>"{description}"</Typography>
-
-        <img src={book_image} alt={title} loading='lazy' width='200px' height='270px' />
+        <Typography>"{description}"</Typography>
+        </div>
+          <div className='rank-1-shadow'>
+        <img  className='rank-1' src={book_image} alt={title} loading='lazy' />
+       </div>    
       </Link>
+     
     </Box>
+    </div>
   )
 }
 
