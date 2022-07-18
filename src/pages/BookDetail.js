@@ -4,11 +4,13 @@ import { Box } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
 import Detail from '../components/Detail';
-import { fetchData } from '../utils/fetchData';;
+import { fetchData } from '../utils/fetchData';
+import priceGen from '../utils/priceGen';
 
 const BookDetail = () => {
   const [bookDetail, setBookDetail] = useState({});
   const [loading, setLoading] = useState(true);
+  const price = priceGen();
 
   const { id } = useParams();
 
@@ -43,6 +45,7 @@ const BookDetail = () => {
           publisher={bookInfo.publisher}
           description={bookInfo.description}
           previewLink={bookInfo.previewLink}
+          price={price}
         />
       );
     }
