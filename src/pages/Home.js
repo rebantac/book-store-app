@@ -11,13 +11,16 @@ const Home = () => {
   const [shownyt, setShownyt] = useState(true);
 
   return (
-    <Box>
+    // <Box>
+    <>
+      
+  {/* <SearchBooks setBooks={setBooks} setShownyt={setShownyt} setBestSellers={setBestSellers} /> */}
       <HeroBanner />
-
       <SearchBooks setBooks={setBooks} setShownyt={setShownyt} setBestSellers={setBestSellers} />
 
       <Books books={books} shownyt={shownyt} bestSellers={bestSellers} />
-    </Box>
+   
+    </>
   )
 }
 

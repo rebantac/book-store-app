@@ -41,11 +41,12 @@ const SearchBooks = ({ setBooks, setShownyt, setBestSellers }) => {
 
   return (
     <Stack m='40px'>
-      <div className='collection'>
+      {/* <div className='collection'>
         Our <br/> Collections
-      </div>
+      </div> */}
 
       {/* <Box m='40px'className='search_field'> */}
+      <>
       <div className='searching'>
         <input className='text-line'
     
@@ -59,7 +60,7 @@ const SearchBooks = ({ setBooks, setShownyt, setBestSellers }) => {
         <i class="fa-solid fa-2x fa-magnifying-glass icon"></i>
         </button>
         </div>
-
+        </>
       {/* </Box> */}
     </Stack>
   )
