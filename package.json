@@ -21,9 +21,11 @@
     "react-loader-spinner": "^6.0.0-0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-simply-carousel": "^8.3.5",
     "react-stripe-checkout": "^2.6.3",
     "stripe": "^8.222.0",
     "uuid": "^8.3.2"
+   
   },
   "scripts": {
     "start": "react-scripts start",

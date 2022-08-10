@@ -1,35 +1,40 @@
 import React from 'react';
-import { Box, Link, Typography } from '@mui/material';
+import { Box, Link,  typography } from '@mui/material';
+
 
 const bestSellerCard = ({ bestSeller }) => {
   const { book_image, author, title, rank } = bestSeller;
 
   return (
     <>
- 
+     
       {/* {console.log(bestSeller)} */}
      
       <Link to={`/book/${title}`}>
       <div class="container">
-  <div class="row">
-    <div class="col">
-        <Typography>
+  {/* <div class="row">
+    <div class="center col-lg-6"> */}
+       
+        <img className='book-img' src={book_image} alt={title} loading='lazy' />
+        <p className='rank'>
           Rank: {rank}
-        </Typography>
+       </p>
 
       
 
-        <Typography>
+        < p className='rank_title'>
           {title}
-        </Typography>
-        </div>
-        <div class="col">
-        <Typography >{author}</Typography>
-        <img src={book_image} alt={title} loading='lazy' />
-        </div>
-        </div>
+        </ p>
+        
+        {/* <div class="center col-lg-6"> */}
+        < p className='rank_author' >{author}</ p>
+        {/* </div> */}
+        {/* </div>
+        </div> */}
         </div>
       </Link>
+
+    
        
       </>
   )

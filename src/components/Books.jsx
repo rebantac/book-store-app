@@ -11,9 +11,9 @@ const Books = ({ books, shownyt, bestSellers }) => {
     if (shownyt === false) {
       return (
         <>
-          <Typography>
+          <h1 className='card_para' >
             Showing Results
-          </Typography>
+          </h1>
           {/* {console.log(books)} */}
 
           <Stack direction='row' sx={{ gap: { lg: '110px', xs: '50px' } }} flexWrap='wrap' justifyContent='center'>
