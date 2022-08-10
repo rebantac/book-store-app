@@ -37,10 +37,6 @@ const Books = ({ books, shownyt, bestSellers }) => {
       // console.log(bestSellers)
       return (
         <>
-          {/* <Typography>
-            The New York Times Best Sellers
-          </Typography> */}
-
           <Stack direction='row' sx={{ gap: { lg: '110px', xs: '50px' } }} flexWrap='wrap' justifyContent='center'>
             {bestSellers.map((bestSeller, index) => {
               if (bestSeller.rank === 1) {

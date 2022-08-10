@@ -14,8 +14,8 @@ const Home = () => {
     // <Box>
     <>
       
-  {/* <SearchBooks setBooks={setBooks} setShownyt={setShownyt} setBestSellers={setBestSellers} /> */}
       <HeroBanner />
+      
       <SearchBooks setBooks={setBooks} setShownyt={setShownyt} setBestSellers={setBestSellers} />
 
       <Books books={books} shownyt={shownyt} bestSellers={bestSellers} />

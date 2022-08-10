@@ -41,11 +41,6 @@ const SearchBooks = ({ setBooks, setShownyt, setBestSellers }) => {
 
   return (
     <Stack m='40px'>
-      {/* <div className='collection'>
-        Our <br/> Collections
-      </div> */}
-
-      {/* <Box m='40px'className='search_field'> */}
       <>
       <div className='searching'>
         <input className='text-line'
@@ -61,7 +56,6 @@ const SearchBooks = ({ setBooks, setShownyt, setBestSellers }) => {
         </button>
         </div>
         </>
-      {/* </Box> */}
     </Stack>
   )
 }
