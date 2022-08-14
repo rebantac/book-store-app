@@ -65,6 +65,7 @@ const Detail = ({
             ))}
             <br></br>
             <p className="publish">Publisher: {publisher}</p>
+            <p className="price_d">${price}</p>
             </div>
             <StripeCheckout
               stripeKey={process.env.REACT_APP_PUBLIC_STRIPE_PUBLISHABLE_KEY}
@@ -74,7 +75,7 @@ const Detail = ({
               shippingAddress
               billingAddress
             >
-              <button className="part2_btn btn btn-dark btn-lg download btn1">Buy Now at just $ {price}</button>
+              <button className="part2_btn btn btn-dark btn-lg download btn1">Buy Now</button>
             </StripeCheckout>
           </div>
         </div>

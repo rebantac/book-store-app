@@ -959,3 +959,221 @@ li{
 .description_rank1 {
     font-size: 2vw;
 }
+.rank_desp{
+        position: absolute;
+        
+        width: 0%;
+        width: 16%;
+    color: #a08a7e00;
+       /* color: aqua; */
+        text-align: center;
+        /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) -123%, #000000 43%); */
+        /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) -123%, #000000 43%); */
+        background-color: #a08a7e00 ;
+        opacity: 3;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        opacity: 4;
+        cursor: pointer;
+    
+}
+.rank_desp:hover{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -123%, #000000 43%);
+    transition: 5ms;
+    /* width: 19%; */
+        color: #A08A7E;
+        cursor: pointer;
+    
+
+}
+.container{
+    padding: 20%;
+}
+.points:hover{
+    color: #A08A7E;
+  }
+  
+  
+  .rank_desp:after {
+    content: '';
+    position: absolute;
+    /* width: 100%; */
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #A08A7E;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .rank_desp:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  @media (max-width: 1229px) {
+    .rank_desp{
+        width: 17%;
+    height: 44%;
+    }
+  }
+
+  @media (max-width: 1028px) {
+    .rank_desp {
+        width: 20%;
+        height: 50%;
+    }
+  }
+  @media 
+  (max-width :988px) {
+    .rank_desp {
+        width: 21%;
+        height: 50%;
+    }
+  }
+  @media 
+  (max-width :992px) {
+    .rank_desp{
+    width: 20%;
+    height: 54%;
+    }
+  }
+  @media
+  (max-width :913px) {
+      .rank_desp {
+          width: 23%;
+          height: 22%;
+      }
+      
+  }
+  @media 
+  (max-width :862px) {
+    .rank_desp {
+        width: 24%;
+        height: 49%;
+    }
+    }
+
+    @media 
+    (max-width :849px) {
+     
+          .rank_desp {
+              width: 28%;
+              height: 29%;
+          }
+      }
+
+  @media 
+  (max-width :800px) {
+    .rank_desp {
+        width: 30%;
+        height: 49%;
+    }
+  }
+
+ 
+
+  
+  
+    @media 
+    (max-width :640px) {
+     
+        .rank_desp {
+            width: 36%;
+      }
+    }
+    @media 
+    (max-width :521px) {
+     
+        .rank_desp {
+            width: 40%;
+      }
+    }
+    @media 
+    (max-width :460px) {
+     
+        .rank_desp {
+            width: 48vw;
+            height: 36%;
+      }
+    }
+    @media
+    (max-width :413px) {
+     
+        .rank_desp {
+            width: 49vw;
+            height: 33%;
+        }
+    }
+    @media
+    (max-width :400px) {
+     
+        .rank_desp {
+            width: 51vw;
+            height: 36%;
+        }
+    }
+    @media
+    (max-width :363px) {
+     
+        .rank_desp {
+            width: 56vw;
+            height: 47%;
+        }
+    }
+    @media
+    (max-width :350px) {
+     
+        .rank_desp {
+            width: 55vw;
+      }
+    }
+    @media
+    (max-width :300px) {
+     
+        .rank_desp {
+            width: 60vw;
+      }
+    }
+@media
+    (max-width :250px) {
+     
+        .rank_desp {
+            width: 65vw;
+      }
+    }
+    @media
+    (max-width :200px) {
+     
+        .rank_desp {
+            width: 70vw;
+      }
+    }
+  
+   .detail_part{
+    line-height: 34%;
+   }
+
+   .title{
+    margin-bottom: 8%;
+   }
+
+.price_d{
+    font-size: 250%;
+    margin-top: 6%;
+}
+
+.book-list {
+    font-size: 4.5vw;
+}
+
+@media (max-width : 500px) {
+    .side-icon{
+        font-size: 1.4rem !important;
+    }
+}

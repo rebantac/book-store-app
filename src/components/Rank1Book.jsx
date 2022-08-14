@@ -225,7 +225,7 @@ const Rank1Book = ({ bestSeller }) => {
         {/* <div className='flexing'> */}
 
         <img className="line2" src={line} alt="Underline" />
-        <h1 className="book-list">OUR COLLECTIONS</h1>
+        <h1 className="book-list">O U R &nbsp;&nbsp;   C O L L E C T I O N S</h1>
       </div>
 
       {/* </div> */}
