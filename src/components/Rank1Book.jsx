@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Link, Typography } from "@mui/material";
 import line from "../assets/line__.jpg";
 import books from "../assets/Frame__3.png";
-import banner from "../assets/Frame8.png";
+// import banner from "../assets/Frame8.png";
 import b1 from "../assets/banner4.jpg";
 import b2 from "../assets/banner5.jpg";
 import StripeCheckout from "react-stripe-checkout";

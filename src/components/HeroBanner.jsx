@@ -3,7 +3,7 @@ import throne from '../assets/the-photography-of-game-of-thrones_game-of-thrones
 // import books from '../assets/Frame__3.png'
 // import books from '../assets/new_book.jpg'
 import books from '../assets/new_book2.jpg'
-import Library from '../assets/heroBanner.png';
+// import Library from '../assets/heroBanner.png';
 import line from '../assets/line__.jpg';
 // import InstagramIcon from '@mui/icons-material/Instagram';
 // import PinterestIcon from '@mui/icons-material/Pinterest';
