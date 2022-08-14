@@ -1177,3 +1177,41 @@ li{
         font-size: 1.4rem !important;
     }
 }
+.description_rank1 {
+    font-size: 1.4vw !important;
+    padding: 4% !important;
+}
+.price_r{
+    font-size: 3vw;
+    margin-top: -12%;
+    font-family: 'Playfair Display', serif;;
+   
+}
+@media (max-width : 992px) {
+    .price_r{
+        margin-top: -27%;
+        margin-bottom: 14%;
+    }
+    .number{
+        z-index: 5;
+        font-size: 8vw;
+        margin-top: -7%;
+       
+    }
+    .description_rank1{
+        margin-top: -39%;
+ 
+    }
+    .t_n{
+        text-align: center;
+    }
+    .t_a{
+        text-align: center;
+    }
+}
+@media (max-width : 418px){
+    .description_rank1{
+        margin-top: -28%;
+ 
+    }
+}

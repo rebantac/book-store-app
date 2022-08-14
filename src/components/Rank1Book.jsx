@@ -62,6 +62,7 @@ const Rank1Book = ({ bestSeller }) => {
             {author}
             </div> */}
             <br></br><p className="description_rank1">"{description}"</p><br></br>
+            <p className="price_r">Available at just ${price}</p>
             {/* <button type="button" className="part2_btn btn btn-dark btn-lg download btn1">Buy Now</button> */}
             <StripeCheckout
               stripeKey={process.env.REACT_APP_PUBLIC_STRIPE_PUBLISHABLE_KEY}
@@ -72,7 +73,7 @@ const Rank1Book = ({ bestSeller }) => {
               billingAddress
             >
               <button className="part2_btn btn btn-dark btn-lg download btn1">
-                Buy Now at just $ {price}
+                Buy Now 
               </button>
             </StripeCheckout>
           </div>
@@ -85,9 +86,9 @@ const Rank1Book = ({ bestSeller }) => {
               loading="lazy"
             />
               <div className="rank1_title">
-            <p >{title}</p>
+            <p className="t_n">{title}</p>
             <br></br>
-            {author}
+            <p className="t_a"> {author}</p>
             </div>
           </div>
         </div>
