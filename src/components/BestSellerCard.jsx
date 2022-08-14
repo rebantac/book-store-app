@@ -16,8 +16,8 @@ const bestSellerCard = ({ bestSeller }) => {
     <div class="center col-lg-6"> */}
        
         <img className='book-img' src={book_image} alt={title} loading='lazy' />
-        <p className='rank'>
-          Rank: {rank}
+        <p className='rank_one'>
+          #{rank}
        </p>
 
       

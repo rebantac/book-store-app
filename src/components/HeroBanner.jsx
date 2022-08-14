@@ -32,9 +32,9 @@ const HeroBanner = () => {
        <p className='banner_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id dolor non orci ultrices tincidunt. Donec suscipit tortor quis ex sodales, vel pretium diam finibus.
        </p> 
        <div className='buttons'>
-       <button type="button" class="btn btn-dark btn-lg download btn1"><i class="fa-brands fa-apple"></i>Download</button>
+       <button type="button" class="btn btn-dark btn-lg download btn1"><i class="fa-brands fa-apple"></i> Download</button>
        <button type="button" class="btn btn-outline-light btn-lg download btn2">
-            <i class="fa-brands fa-google-play"></i>Download</button>
+            <i class="fa-brands fa-google-play"></i> Download</button>
             </div>
         </div>
       </div>

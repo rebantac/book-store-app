@@ -46,7 +46,7 @@ const Rank1Book = ({ bestSeller }) => {
         <br></br>
       </div>
       <h1 className="heading-2part">
-        O U R <br></br> C O L L E C T I O N
+        O U R <br></br> B E S T S E L L E R
       </h1>
       <Link to={`/book/${title}`}>
         <div className="row rank-1-sub">
@@ -54,12 +54,14 @@ const Rank1Book = ({ bestSeller }) => {
 
           <div class=" book2part center col-lg-6">
             {/* <div className='rank-1-desp'> */}
-            Rank: {rank}
+            <h1 className="number"># {rank}</h1>
             <br></br>
-            {title}
+            {/* <div className="rank1_title">
+            <p >{title}</p>
             <br></br>
             {author}
-            <br></br>"{description}"<br></br>
+            </div> */}
+            <br></br><p className="description_rank1">"{description}"</p><br></br>
             {/* <button type="button" className="part2_btn btn btn-dark btn-lg download btn1">Buy Now</button> */}
             <StripeCheckout
               stripeKey={process.env.REACT_APP_PUBLIC_STRIPE_PUBLISHABLE_KEY}
@@ -82,6 +84,11 @@ const Rank1Book = ({ bestSeller }) => {
               alt={title}
               loading="lazy"
             />
+              <div className="rank1_title">
+            <p >{title}</p>
+            <br></br>
+            {author}
+            </div>
           </div>
         </div>
 
@@ -106,8 +113,7 @@ const Rank1Book = ({ bestSeller }) => {
               {" "}
               <i class=" design_icon fa-solid fa-quote-left fa-3x"></i> Lorem
               ipsum dolor sit amet, consectetur adipiscing elit. Proin id dolor
-              non orci ultrices tincidunt. Donec suscipit tortor quis ex
-              sodales, vel pretium diam finibus.
+              non orci .
               <i class=" design_icon fa-solid fa-quote-right fa-3x"></i>
             </p>
             <div className="button_down">
@@ -159,7 +165,8 @@ const Rank1Book = ({ bestSeller }) => {
                   </div>
                 
                 <div class=" c_para center col-lg-6">
-                  <p> id molestie sem. Phasellus neque neque, tempus vitae accumsan sed, pharetra ac turpis. Etiam pellentesque quam et sollicitudin cursus. Proin magna lacus, egestas a gravida sed, semper vestibulum lorem. Nunc cursus nibh ut lacus vestibulum dignissim. Vivamus feugiat porttitor imperdiet.</p>
+                  <p> " id molestie sem. Phasellus neque neque, tempus vitae accumsan sed, pharetra ac turpis. Etiam pellentesque quam et sollicitudin cursus. Proin magna lacus, egestas a gravida sed, semper vestibulum lorem. Nunc cursus nibh ut lacus vestibulum dignissim. Vivamus feugiat porttitor imperdiet sollicitudin cursus. Proin magna lacus, egestas a gravida sed, semper vestibulum lorem."</p>
+                  <p className="said">-Peter Colon</p>
                 </div>
               </div>
              </div>
@@ -173,7 +180,8 @@ const Rank1Book = ({ bestSeller }) => {
                   </div>
                 
                 <div class=" c_para center col-lg-6">
-                  <p> id molestie sem. Phasellus neque neque, tempus vitae accumsan sed, pharetra ac turpis. Etiam pellentesque quam et sollicitudin cursus. Proin magna lacus, egestas a gravida sed, semper vestibulum lorem. Nunc cursus nibh ut lacus vestibulum dignissim. Vivamus feugiat porttitor imperdiet.</p>
+                  <p> " id molestie sem. Phasellus neque neque, tempus vitae accumsan sed, pharetra ac turpis. Etiam pellentesque quam et sollicitudin cursus. Proin magna lacus, egestas a gravida sed, semper vestibulum lorem. Nunc cursus nibh ut lacus vestibulum dignissim. Vivamus feugiat porttitor imperdiet." </p>
+                  <p className="said">-Emily Watson</p>
                 </div>
               </div>
             </div>
@@ -184,7 +192,8 @@ const Rank1Book = ({ bestSeller }) => {
                   </div>
                 
                 <div class=" c_para center col-lg-6">
-                  <p> id molestie sem. Phasellus neque neque, tempus vitae accumsan sed, pharetra ac turpis. Etiam pellentesque quam et sollicitudin cursus. Proin magna lacus, egestas a gravida sed, semper vestibulum lorem. Nunc cursus nibh ut lacus vestibulum dignissim. Vivamus feugiat porttitor imperdiet.</p>
+                  <p> " id molestie sem. Phasellus neque neque, tempus vitae accumsan sed, pharetra ac turpis. Etiam pellentesque quam et sollicitudin cursus. Proin magna lacus, egestas a gravida sed, semper vestibulum lorem. Nunc cursus nibh ut lacus vestibulum dignissim. Vivamus feugiat porttitor imperdiet sollicitudin cursus. Proin magna lacus, egestas a gravida sed, semper vestibulum lorem. Nunc csollicitudin cursus. Proin magna lacus, egestas a gravida sed, semper vestibulum lorem." </p>
+                  <p className="said">-Scarlet Lee</p>
                 </div>
               </div>
             </div>
@@ -216,7 +225,7 @@ const Rank1Book = ({ bestSeller }) => {
         {/* <div className='flexing'> */}
 
         <img className="line2" src={line} alt="Underline" />
-        <h1 className="book-list">Also Available</h1>
+        <h1 className="book-list">OUR COLLECTIONS</h1>
       </div>
 
       {/* </div> */}
